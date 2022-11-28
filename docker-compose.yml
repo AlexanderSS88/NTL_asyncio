@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  database_asyncio:
+    image: "postgres:latest"
+    environment:
+      POSTGRES_PASSWORD: "XXXXXXXXXX"
+      POSTGRES_USER: "XXXXXXXXXXXX"
+      POSTGRES_DB: "ntl_asyncio"
+    ports:
+      - "5431:5432"
